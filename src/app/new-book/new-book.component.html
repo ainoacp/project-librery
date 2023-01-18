@@ -1,0 +1,10 @@
+
+<div>
+    <h3>Registra tu libro favorito</h3>
+    
+    <input type="text" placeholder="título" #title />
+    <input type="text" placeholder="autor" #author />
+    <input type="text" placeholder="portada" #image />
+
+    <button type="button" (click)="addBook({title: title.value, author: author.value, image: image.value})">Añadir</button>
+</div>
